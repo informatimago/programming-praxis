@@ -1,0 +1,12 @@
+(defun equa2 (a b c)
+  (let ((delta (- (* b b) (* 4 a c))))
+    (list (/ (- (sqrt delta) b)  2 a)
+          (/ (+ (sqrt delta) b) -2 a))))
+
+(let ((a '(1 4 9 2 7 3))
+      (b '(9 7 4 1)))
+  (let ((s (- (reduce '+ a) (reduce '+ b)))
+        (p (/ (reduce '* a) (reduce '* b))))
+    (let* ((y (equa2 1 (- s) p))
+           (x (mapcar (lambda (y) (- s y))y)))
+      (list x y))))
