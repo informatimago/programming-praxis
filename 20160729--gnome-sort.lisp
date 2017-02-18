@@ -2,9 +2,9 @@
 ;;
 ;; Gnome Sort
 ;; July 29, 2016
-;; 
+;;
 ;; A garden gnome sorts flower pots by the following method:
-;; 
+;;
 ;;     The gnome looks at the flower pot next to him and the flower pot
 ;;     just behind him. If they are correctly ordered, so the flower pot
 ;;     just behind him is smaller than the flower pot next to him, he
@@ -13,7 +13,7 @@
 ;;     (thus, he is at the start of the line of flower pots), he steps
 ;;     forward to the next pot. If there is not flower pot next to him
 ;;     (thus, he is at the end of the line of flower pots), he is done.
-;; 
+;;
 ;; Your task is to implement a program that sorts by the gnome
 ;; method. When you are finished, you are welcome to read or run a
 ;; suggested solution, or to post your own solution or discuss the

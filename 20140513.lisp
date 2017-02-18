@@ -16,7 +16,7 @@
   list)
 ;; --> (10 30 40 50 70)
 ;; [/sourcecode]
-;; 
+;;
 ;; This is correct, as long as the list is is originally in the ascending
 ;; order, and the node given to insert-at-node is effectively the node
 ;; containing the smallest item greater than the new data.
@@ -73,11 +73,11 @@
   (assert (= (count-factors-in-factorial-n 25 5) 6))
   (assert (= (count-factors-in-factorial-n 27 5) 6)))
 ;; [/sourcecode]
-;; 
+;;
 ;; For any n>=2, in the decomposition in prime factors of n!, the
 ;; exponent of 2 is greater than the exponent of 5,
 ;; since (log n 2)/(log n 5) = (log 5 2) ~= 2.321928 > 1
-;; 
+;;
 ;; Since only the multiples of an exponent of 10 will add a 0 to the
 ;; factorial, and there are more multiples of 2 than multiples of 5, we
 ;; can just sum the exponents of 5 factor by factor.

@@ -1,11 +1,11 @@
 (in-package :cl-user)
-	
+
 ;; Compare Strings With One Error
 ;; by programmingpraxis
-;; 
+;;
 ;; I don't know if today's exercise comes from an interview question or
 ;; from somebody's homework, but it's a good exercise:
-;; 
+;;
 ;;     Given two strings, determine if they are the same except for
 ;;     exactly one difference. Two identical strings fail to match. Two
 ;;     strings that differ in two or more characters fail to match. Two
@@ -13,7 +13,7 @@
 ;;     are identical except for one additional character. Indicate the
 ;;     index where the difference occurs, or report failure if the two
 ;;     input strings do not differ in exactly one character.
-;; 
+;;
 ;; Your task is to write a program that compares strings with one
 ;; error. When you are finished, you are welcome to read or run a
 ;; suggested solution, or to post your own solution or discuss the

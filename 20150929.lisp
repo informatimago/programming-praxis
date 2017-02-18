@@ -54,7 +54,7 @@
 
 (make-palindrome "")
 ;; --> ""
-(make-palindrome "x") 
+(make-palindrome "x")
 ;; --> "x"
 (make-palindrome "xy")
 (make-palindrome "xyaabb")

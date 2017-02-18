@@ -1,14 +1,14 @@
 
 ;; Longest Sequence Of Consecutive Odd Integers
 ;; October 20, 2015
-;; 
+;;
 ;; Today’s exercise is to find the longest sequence of consecutive odd
 ;; integers that add to a given sum. For instance, given the target
 ;; 160701, the three consecutive odd integers 53565, 53567 and 53569 sum
 ;; to 160701, but the 391 consecutive odd integers from 21 to 801 also
 ;; sum to 160701, and are the longest sequence of consecutive odd
 ;; integers to do so, so they are the correct answer.
-;; 
+;;
 ;; Your task is to write a program to find the longest sequence of
 ;; consecutive odd integers that add to a given sum. When you are
 ;; finished, you are welcome to read or run a suggested solution, or to
@@ -17,25 +17,25 @@
 
 
 ;; N = a+0 + a+2 + … a+(2k)
-;; 
+;;
 ;;                k
 ;; N = a(k+1) + 2 Σi
 ;;               i=0
-;; 
+;;
 ;;                 k(k+1)
 ;; N = a(k+1) + 2 --------
 ;;                    2
-;; 
+;;
 ;; N = a(k+1) + k(k+1)
-;; 
+;;
 ;; N = (a+k)(k+1)
-;; 
+;;
 ;; Therefore we will find the length of the longuest sequence of
 ;; consecutive odd cardinals (starting from a) amongst the divisors of N
 ;; (minus one).
 ;;
 ;; a+k = N/(k+1)
-;; 
+;;
 ;; a = N/(k+1)-k
 ;;
 ;; We'll have to find the odd cardinal a for the biggest k possible
@@ -60,21 +60,21 @@
 (divisors 160701)
 (1 3 17 51 23 69 391 1173 137 411 2329 6987 3151 9453 53567 160701)
 
-(-53563 53567) 
-(-9435 9453) 
-(-3099 3151) 
-(-6963 6987) 
-(-2259 2329) 
-(-19 411) 
+(-53563 53567)
+(-9435 9453)
+(-3099 3151)
+(-6963 6987)
+(-2259 2329)
+(-19 411)
 (1037 137) 1037
 137
 
-(-53563 53567) 
-(-9435 9453) 
-(-3099 3151) 
-(-6963 6987) 
-(-2259 2329) 
-(-19 411) 
+(-53563 53567)
+(-9435 9453)
+(-3099 3151)
+(-6963 6987)
+(-2259 2329)
+(-19 411)
 (1037 137)
 1037
 137

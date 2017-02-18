@@ -1,14 +1,14 @@
 
 ;; Two Swaps
 ;; October 23, 2015
-;; 
+;;
 ;; Today we have one of those tricky interview questions that are easy
 ;; once you know the answer:
-;; 
+;;
 ;;     You are given an array of three elements, in some random
 ;;     order. You must sort the array into increasing order, but may only
-;;     use two swaps. How can you do it? 
-;; 
+;;     use two swaps. How can you do it?
+;;
 ;; Your task is to write a program that sorts a three-element array with
 ;; only two swaps. When you are finished, you are welcome to read or run
 ;; a suggested solution, or to post your own solution or discuss the

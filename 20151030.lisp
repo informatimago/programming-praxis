@@ -1,16 +1,16 @@
 
 ;; Reverse String Ignoring Special Characters
 ;; October 30, 2015
-;; 
+;;
 ;; Today’s exercise solves a homework problem for some lucky reader:
-;; 
+;;
 ;;     Given an input string that contains both alphabetic characters and
 ;;     non-alphabetic characters, reverse the alphabetic characters while
 ;;     leaving the non-alphabetic characters in place. For instance,
 ;;     given the input string a!b3c, return the output string c!b3a,
 ;;     where the non-alphabetic characters ! and 3 are in their original
 ;;     positions.
-;; 
+;;
 ;; Your task is to write a program that reverses a string while leaving
 ;; non-alphabetic characters in place. When you are finished, you are
 ;; welcome to read or run a suggested solution, or to post your own

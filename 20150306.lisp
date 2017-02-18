@@ -3,14 +3,14 @@
 ;; Newsgroups: gwene.com.yahoo.pipes.lisp
 ;; Date: Fri, 06 Mar 2015 10:00:09 +0100 (4 hours, 1 minute, 35 seconds ago)
 ;; Message-ID: <x1-CMuvSQ5uR6vr70m9ywJFJ7rNsw8@gwene.org>
-;; 
+;;
 ;; This question arose at a job-interview site: Find all numbers
 ;; divisible only by 3, 5 and 7. For instance, 35 = 5 × 7 is included in
 ;; the set, but 30 = 2 × 3 × 5 is not because of the factor of 2. Your
 ;; task is to write the requested program and determine how many numbers
 ;; in the set are less than a million. When you are finished, you are
 ;; welcome to read or run a suggest solution, or to post your own
-;; solution or discuss the exercise in the comments below. 
+;; solution or discuss the exercise in the comments below.
 
 (length (sort (let ((max 1000000))
                 (loop

@@ -120,27 +120,27 @@
                 (funcall fun (read-line stream)))))))
 
 ;; (last-lines #P"~/src/lisp/encours/programming-praxis--20150821.lisp" 20 (function print))
-;; 
-;; "  (let ((last-lines (make-array (1+ n) :initial-element nil))" 
-;; "        (last-index -1))" 
-;; "    ;; LAST-LINES will be used as a circular buffer, with LAST-INDEX" 
-;; "    ;; pointing to the last entry.  We need one more slot for the EOF." 
-;; "    (flet ((inc (x) (mod (1+ x) (1+ n))))" 
-;; "      (with-open-file (stream file)" 
-;; "        (loop" 
-;; "          :do (setf last-index                   (inc last-index)" 
-;; "                    (aref last-lines last-index) (file-position stream))" 
-;; "          :while (read-line stream nil nil))" 
-;; "        (loop" 
-;; "          :repeat n" 
-;; "          :for index := (inc last-index) :then (inc index)" 
-;; "          :when (aref last-lines index)" 
-;; "            :do (file-position stream (aref last-lines index))" 
-;; "                (funcall fun (read-line stream)))))))" 
-;; "" 
-;; "(last-lines #P\"~/src/lisp/encours/programming-praxis--20150821.lisp\" 20 (function print))" 
-;; "" 
-;; "" 
+;;
+;; "  (let ((last-lines (make-array (1+ n) :initial-element nil))"
+;; "        (last-index -1))"
+;; "    ;; LAST-LINES will be used as a circular buffer, with LAST-INDEX"
+;; "    ;; pointing to the last entry.  We need one more slot for the EOF."
+;; "    (flet ((inc (x) (mod (1+ x) (1+ n))))"
+;; "      (with-open-file (stream file)"
+;; "        (loop"
+;; "          :do (setf last-index                   (inc last-index)"
+;; "                    (aref last-lines last-index) (file-position stream))"
+;; "          :while (read-line stream nil nil))"
+;; "        (loop"
+;; "          :repeat n"
+;; "          :for index := (inc last-index) :then (inc index)"
+;; "          :when (aref last-lines index)"
+;; "            :do (file-position stream (aref last-lines index))"
+;; "                (funcall fun (read-line stream)))))))"
+;; ""
+;; "(last-lines #P\"~/src/lisp/encours/programming-praxis--20150821.lisp\" 20 (function print))"
+;; ""
+;; ""
 
 ;; [/sourcecode]
 
@@ -233,16 +233,16 @@ LAST-SIZE bytes."
 ;; ; No value
 ;; cl-user> (time (big-file-last-lines #P"/tmp/actors.list" 12 'write-line))
 ;;          5. CD-ROM  distribution  is  prohibited  without  written
-;;             permission from the Internet Movie Database Ltd 
-;;             
+;;             permission from the Internet Movie Database Ltd
+;;
 ;;     Distribution by e-mail, BBS and  Internet  systems  is  positively
-;;     encouraged within these limitations. 
-;;        
+;;     encouraged within these limitations.
+;;
 ;;     The files and software which make up the  movie  database  may  be
 ;;     uploaded  to  commercial  BBS  systems  providing  that  the above
 ;;     conditions are met and no *additional* fees are applied above  the
-;;     standard connect time or downloading charges. 
-;; 
+;;     standard connect time or downloading charges.
+;;
 ;;     For further info visit http://www.imdb.com/licensing/contact
 ;; (big-file-last-lines #P"/tmp/actors.list" 12 'write-line)
 ;; took 379 microseconds (0.000379 seconds) to run.

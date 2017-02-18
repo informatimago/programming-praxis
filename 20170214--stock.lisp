@@ -1,10 +1,10 @@
 ;; Today's exercise is a classic of both algorithm classes and corporate
 ;; interviews:
-;; 
+;;
 ;; Given a list of daily stock prices for a month, find the day on which
 ;; you can buy a stock and the day on which you can sell the stock that
 ;; gives the maximum gain.
-;; 
+;;
 ;; Your task is to write a program that finds the optimal starting and
 ;; ending dates for stock purchase and sale. When you are finished, you
 ;; are welcome to read or run a suggested solution, or to post your own

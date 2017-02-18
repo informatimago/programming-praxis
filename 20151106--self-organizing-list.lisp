@@ -1,7 +1,7 @@
 
 ;; Self-Organizing Lists
 ;; November 6, 2015
-;; 
+;;
 ;; There are many applications where you need to keep a small number of
 ;; items, a set, and check for membership in the set, and there are many
 ;; algorithms for doing that: a linked list keeps the items in random
@@ -9,7 +9,7 @@
 ;; items in sequence to be retrieved by binary search, a hash table
 ;; performs some kind of math on the item, various kinds of trees can
 ;; store and search the items, and so on.
-;; 
+;;
 ;; Today’s exercise looks at a simple algorithm that is appropriate for
 ;; search in a set that isn’t too big, doesn’t change too often, and
 ;; isn’t searched too many times, where the definition of “too” depends
@@ -19,7 +19,7 @@
 ;; frequently-accessed items will stay near the front of the list, so
 ;; that instead of an average search that requires inspection of half the
 ;; list, frequently-accessed items are found much more quickly.
-;; 
+;;
 ;; Your task is to write functions that maintain a set as a
 ;; self-organizing list: you should provide functions to insert and
 ;; delete items from the set as well as to search within the set. When
@@ -65,8 +65,8 @@ SOL-FIND element list &key test key                                 Function
     Finds the designated ELEMENT in the LIST and returns it, while
     moving it into the first position of the LIST.  The LIST is
     mutated.  If the ELEMENT is found, a second value T is returned,
-    otherwise two NIL values are returned. 
-    
+    otherwise two NIL values are returned.
+
     Since this operation doesn't change the NULL status of the LIST
     argument, it can be implemented as a function mutating the LIST.
     The trick  is to keep the first CONS cell of the LIST in place,
@@ -81,7 +81,7 @@ SOL-FIND element list &key test key                                 Function
                                +-----------+
                                |           |
                                |           v
-     [a|*]-+ [b|*]--> …  [p|*]-+ [x|*]-+ [s|*]--> 
+     [a|*]-+ [b|*]--> …  [p|*]-+ [x|*]-+ [s|*]-->
            |   ^                  ^    |
            |   |                  |    |
            +---|------------------+    |
@@ -156,9 +156,9 @@ the result of calling DELETE with ITEM, place, and the REMOVE-KEYWORDS.")
   (print list))
 
 prints:
-    (1 2 3 4 5) 
-    (3 1 2 4 5) 
-    (3 1 4 5) 
+    (1 2 3 4 5)
+    (3 1 2 4 5)
+    (3 1 4 5)
     (5 3 1 4)
 
 --> (5 3 1 4)

@@ -2,7 +2,7 @@
 ;; Zeroing A Matrix
 ;; by programmingpraxis
 ;; Today's exercise is a simple interview question from ADP:
-;; 
+;;
 ;; Given a two-dimensional matrix of integers, for any cell that
 ;; initially contains a zero, change all elements of that cell's row and
 ;; column to zero.
