@@ -49,15 +49,3 @@ MMMMMMMMMMMMMM
 
 
 |#
-
-(defparameter *line-separator* #\newline)
-(defparameter *block-size* 4096)
-(defparameter *half-memory-size* (min (* 16 1024 1024)
-                                      (* *block-size*
-                                         (truncate array-total-size-limit
-                                                   *block-size*))))
-
-(defun make-buffer ()
-  (make-array *half-memory-size*
-              :element-type '(unsigned-byte 8)
-              :fill-pointer *half-memory-size*))
