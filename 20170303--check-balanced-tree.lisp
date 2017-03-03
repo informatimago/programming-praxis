@@ -1,15 +1,15 @@
 ;; https://programmingpraxis.com/2017/03/03/balanced-binary-search-trees/
 ;; https://www.linkedin.com/pulse/software-engineer-detained-several-hours-us-customs-given-fairchild
-;; 
+;;
 ;; The story exploded across the intertubes a few days ago: A software
 ;; engineer trying to enter the United States on a work visa was asked to
 ;; prove his occupation by writing a program for the Customs and Border
 ;; Protection agent:
-;; 
+;;
 ;; Write a function to check if a Binary Search Tree is balanced.
-;; 
+;;
 ;; Let’s help him.
-;; 
+;;
 ;; Your task is to write a function to check if a binary search tree is
 ;; balanced. When you are finished, you are welcome to read or run a
 ;; suggested solution, or to post your own solution or discuss the
