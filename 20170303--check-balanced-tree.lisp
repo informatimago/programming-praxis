@@ -34,6 +34,11 @@
       (to-tree 0 (1- (length v))))))
 
 
+(defstruct node
+  label
+  left
+  right)
+
 (defgeneric balancedp (tree)
   (:documentation "Return nil if the tree is not balanced, or its number of nodes if it is.")
   (:method ((node t))    0)
