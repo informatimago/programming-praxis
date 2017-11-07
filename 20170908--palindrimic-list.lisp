@@ -1,24 +1,24 @@
 ;; Linked List Palindrome
-;; 
+;;
 ;; by programmingpraxis
-;; 
+;;
 ;; Today's exercise is an Amazon interview question from Career Cup (this
 ;; is the exact question asked):
-;; 
-;; 
-;; 
+;;
+;;
+;;
 ;; There is a given linked list where each node can consist of any number
 ;; of characters :- For example
-;; 
+;;
 ;; a-->bcd-->ef-->g-->f-->ed-->c-->ba.
-;; 
+;;
 ;; Now please write a function where the linked list will return true if
 ;; it is a palindrome .
-;; 
+;;
 ;; Like in above example the linked list should return true
-;; 
-;; 
-;; 
+;;
+;;
+;;
 ;; Your task is to write a program to determine if a list of strings
 ;; forms a palindrome. When you are finished, you are welcome to read or
 ;; run a suggested solution, or to post your own solution or discuss the
@@ -132,33 +132,29 @@
 
 cl-user>       (palindromic-list-p '("a" "bcd" "ef" "g" "f" "ed" "c" "ba"))
 
-(equal-palindromic-string 1 "a" 0 "ba" 0) 
-(equal-palindromic-string 1 "bcd" 0 "ba" 1) 
-(equal-palindromic-string 1 "bcd" 1 "c" 0) 
-(equal-palindromic-string 1 "bcd" 2 "ed" 0) 
-(equal-palindromic-string 1 "ef" 0 "ed" 1) 
-(equal-palindromic-string 1 "ef" 1 "f" 0) 
-(equal-palindromic-string 1 #1="g" 0 #1# 0) 
-(equal-palindromic-string 1 "f" 0 "ef" 0) 
-(equal-palindromic-string 1 "ed" 0 "ef" 1) 
-(equal-palindromic-string 1 "ed" 1 "bcd" 0) 
-(equal-palindromic-string 1 "c" 0 "bcd" 1) 
-(equal-palindromic-string 1 "ba" 0 "bcd" 2) 
-(equal-palindromic-string 1 "ba" 1 "a" 0) 
+(equal-palindromic-string 1 "a" 0 "ba" 0)
+(equal-palindromic-string 1 "bcd" 0 "ba" 1)
+(equal-palindromic-string 1 "bcd" 1 "c" 0)
+(equal-palindromic-string 1 "bcd" 2 "ed" 0)
+(equal-palindromic-string 1 "ef" 0 "ed" 1)
+(equal-palindromic-string 1 "ef" 1 "f" 0)
+(equal-palindromic-string 1 #1="g" 0 #1# 0)
+(equal-palindromic-string 1 "f" 0 "ef" 0)
+(equal-palindromic-string 1 "ed" 0 "ef" 1)
+(equal-palindromic-string 1 "ed" 1 "bcd" 0)
+(equal-palindromic-string 1 "c" 0 "bcd" 1)
+(equal-palindromic-string 1 "ba" 0 "bcd" 2)
+(equal-palindromic-string 1 "ba" 1 "a" 0)
 t
 cl-user>       (palindromic-list-p '("a" "bcd" "ef" "g" "f" "Xd" "c" "ba"))
 
-(equal-palindromic-string 1 "a" 0 "ba" 0) 
-(equal-palindromic-string 1 "bcd" 0 "ba" 1) 
-(equal-palindromic-string 1 "bcd" 1 "c" 0) 
-(equal-palindromic-string 1 "bcd" 2 "Xd" 0) 
-(Equal-palindromic-string 1 "ef" 0 "Xd" 1) 
+(equal-palindromic-string 1 "a" 0 "ba" 0)
+(equal-palindromic-string 1 "bcd" 0 "ba" 1)
+(equal-palindromic-string 1 "bcd" 1 "c" 0)
+(equal-palindromic-string 1 "bcd" 2 "Xd" 0)
+(Equal-palindromic-string 1 "ef" 0 "Xd" 1)
 nil
 cl-user>
 
 ||#
 ;; [/sourcecode]
-
-
-
-
