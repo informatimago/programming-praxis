@@ -2,10 +2,10 @@
 ;;
 ;; Floor And Ceiling In An Array
 ;; November 21, 2017
-;; 
+;;
 ;; We looked at variants of binary search in two recent exercises. Today
 ;; we look at a third variant.
-;; 
+;;
 ;; Your task is to write a variant of binary search in a sorted array
 ;; without duplicates that returns the index of the two elements
 ;; immediately below and above a target; if the target is in the array,
@@ -57,7 +57,3 @@ RETURN:  (values index-floor index-ceiling)
 ;; --> ((nil 0) (0 0) (0 1) (1 1) (1 2) (2 2) (2 3) (3 3) (3 4) (4 4) (4 nil))
 
 ;; [/sourcecode]
-
-
-
-
