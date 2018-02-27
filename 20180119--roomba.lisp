@@ -1,13 +1,13 @@
 ;; Roomba
-;; 
+;;
 ;; January 19, 2018
-;; 
+;;
 ;; A robot can move any number of steps in the four cardinal
 ;; directions. Given the robot’s initial position and a string of moves
 ;; given as, for instance, N3E5S2W6 (any of the four cardinal directions,
 ;; followed by any number of steps, as many commands as desired),
 ;; determine the ending position of the robot.
-;; 
+;;
 ;; Your task is to write a program to determine the ending position of a
 ;; robot, given a starting position and a string of move commands. When
 ;; you are finished, you are welcome to read or run a suggested solution,
@@ -86,4 +86,3 @@ RETURN: a list of subvector of vector, the vector is splited between
 (assert (= (roomba/c #C(0 0) "W4S19W33N17E37N2") #C(0 0)))
 
 ;; [/sourcecode]
-
