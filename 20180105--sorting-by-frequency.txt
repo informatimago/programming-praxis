@@ -1,0 +1,16 @@
+Sorting By Frequency
+January 5, 2018
+
+We have another homework question today, as I continue clearing out my
+backlog of people who sent me email asking for homework help last
+fall:
+
+You are given an array with duplicates, and are to sort the array by
+decreasing frequency of elements. If two elements have the frequency,
+sort them in increasing order of value. For instance, the input (2 3 5
+3 7 9 5 3 7) is sorted as (3 3 3 5 5 7 7 2 9).
+
+Your task is to write a program that sorts by frequency. When you are
+finished, you are welcome to read or run a suggested solution, or to
+post your own solution or discuss the exercise in the comments below.
+
